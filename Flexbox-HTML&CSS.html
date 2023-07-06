@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Demo Flexbox</title>
+        <style>
+            body{
+                padding: 2em;
+            }
+            .headerContainer {
+                display: flex;
+                flex-flow:column wrap;
+                align-content:center;
+                background: tomato;
+                font-weight: bold;
+                color: white;
+                padding : 10px;
+            }
+            .footerContainer{
+                display: flex;
+                flex-flow:column wrap;
+                align-content: center;
+                background: lightblue;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .mainContainer{
+                display: flex;
+                flex-flow:row wrap;
+                font-weight: bold;
+                text-align: center;
+
+            }
+            .mainContainItem{
+                text-align: left;
+                background: deepskyblue;
+            }
+            article{
+                padding: 10px;
+                margin: 10px;
+                background: orchid;
+            }
+            .sideBarLeftItem{background: gold; }
+            .sideBarRightItem{background: hotpink;}
+
+            .sideBarItem {flex: 1 0 0; border: 0px solid green;}
+            .mainContainItem{flex:3 0px;}
+            .sideBarLeftItem{order:1;}
+            .mainContainItem{order: 2;}
+            .sideBarRightItem{order: 3;}
+
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1>Header-sample</h1></header>
+        <div class="mainContainer">
+<section class="mainContainItem">
+
+<article>
+    <h1>first article</h1>
+    <p>Draft Article 1 (Article 1 of Constitution of India 1950) was debated on 15 and 17 November 1948, and 17 and 18 September 1949. The Draft Article declared that ‘India, that is Bharat’ was a ‘Union of States’ and went on to define India’s territory.</p>
+</article>
+<article>
+    <h1>second article</h1>
+    <p>Most members were confused as to why India was described as a ‘Union of States’, instead of a ‘Federation’ which was more appropriate. While presenting the Draft Constitution on an earlier date, the Drafting Committee Chairman had explained that ‘Union of States’ was used to ensure and clarify that States did not have the right to secede from India.</p>
+</article>
+</article>
+<article>
+    <h1>third article</h1>
+    <p>A Member wanted to rename ‘India‘ to ‘Bharat’ as the latter had more historical pedigree. Another Member introduced an amendment to use both ‘India’ and ‘Bharat’ in the Draft Article. The Drafting Committee Chairman had through an amendment, suggested that the Draft Article say ‘India, that is Bharat, shall be a Union of States’. Except for one member who found the phrasing inelegant, the amendment won the support of the house.</p>
+</article>
+
+
+</section>
+<sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left side Bar</p></div></sideBar>
+<sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right side Bar</p></div></sideBar>
+
+        </div>
+        <footer class="footerContainer">footer</footer>
+
+        </footer>
+    </body>
+
+</html>
